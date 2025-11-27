@@ -10,6 +10,7 @@ export const PERSONAL_INFO = {
   linkedin: "linkedin.com/in/peace-ezeala",
   location: "New York Metro Area, (Open to Remote)",
   yearsExperience: 25,
+  resume: "https://drive.google.com/file/d/1768gP3LScFzcf_IxH3lPP0vGqY2T5kXy/view?usp=sharing" // link for resume
   /*teamsLed: 40,*/
   /*transformations: 100*/
 };
