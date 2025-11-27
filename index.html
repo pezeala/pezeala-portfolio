@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peace Ezeala | Product Innovation & Agile Transformation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              canvas: '#FDFBF7', // Cream background
+              primary: '#1A2E35', // Dark Green/Black ink
+              secondary: '#4A5568', // Slate text
+              'brand-green': '#3C6E71', // Deep Teal
+              'brand-yellow': '#E6B800', // Mustard
+              'brand-orange': '#E76F51', // Terracotta
+              'brand-light-green': '#D8E2DC',
+              'brand-light-yellow': '#FAE588',
+              'brand-light-orange': '#FFDDD2',
+            },
+            animation: {
+              'blob': 'blob 7s infinite',
+            },
+            keyframes: {
+              blob: {
+                '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                '100%': { transform: 'translate(0px, 0px) scale(1)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FDFBF7;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #D1D5DB;
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #3C6E71;
+      }
+      .brush-stroke {
+        mask-image: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAgMTB1NTBoNTB2NTB6Ii8+PC9zdmc+'); /* Simplified placeholder */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-canvas text-primary antialiased selection:bg-brand-yellow selection:text-primary">
+    <div id="root"></div>
+  </body>
+</html>

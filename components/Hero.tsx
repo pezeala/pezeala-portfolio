@@ -1,0 +1,88 @@
+import React from 'react';
+import { ArrowRight } from 'lucide-react';
+import { PERSONAL_INFO } from '../data';
+
+const Hero: React.FC = () => {
+  return (
+    <section id="hero" className="relative min-h-screen flex items-center pt-20 pb-10 overflow-hidden">
+      {/* Abstract blobs background */}
+      <div className="absolute top-20 left-[-100px] w-64 h-64 bg-brand-light-yellow rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+      <div className="absolute top-40 right-[-100px] w-72 h-72 bg-brand-light-green rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+      <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-brand-light-orange rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          
+          {/* Left Content */}
+          <div className="space-y-6 md:pr-12 animate-fade-in-up order-2 md:order-1">
+            <h3 className="font-serif text-2xl text-secondary italic">Hey There,</h3>
+            <h1 className="text-5xl md:text-7xl font-extrabold text-primary leading-[1.1] tracking-tight">
+              I'm <span className="text-brand-green">Peace</span> <br />
+              <span className="text-brand-green">Ezeala</span>
+            </h1>
+            
+            <p className="text-lg text-secondary max-w-md leading-relaxed font-medium">
+              {PERSONAL_INFO.tagline}
+            </p>
+
+            <a href={`mailto:${PERSONAL_INFO.email}`} className="inline-block text-brand-orange font-bold text-lg hover:underline">
+              {PERSONAL_INFO.email}
+            </a>
+
+            <div className="pt-4 flex items-center gap-8">
+              <div>
+                <span className="block text-5xl font-bold text-primary">{PERSONAL_INFO.yearsExperience}</span>
+                <span className="text-sm font-bold text-secondary uppercase tracking-wider">Years Experience</span>
+              </div>
+              <div className="h-12 w-[1px] bg-gray-300"></div>
+              <div>
+                <span className="block text-5xl font-bold text-primary">{PERSONAL_INFO.transformations}</span>
+                <span className="text-sm font-bold text-secondary uppercase tracking-wider">Unlimited Team Transformations</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Content - Image masked inside Brush Stroke */}
+          <div className="relative order-1 md:order-2 flex justify-center items-center">
+            {/* Max width set to 2xl for large display, aspect-square to maintain ratio */}
+            <div className="w-full max-w-2xl aspect-square relative">
+              <svg 
+                viewBox="0 0 1000 1000" 
+                xmlns="http://www.w3.org/2000/svg" 
+                className="w-full h-full drop-shadow-2xl"
+              >
+                <defs>
+                  <clipPath id="blobMask">
+                    {/* 
+                      Organic Brush Stroke Shape
+                      - ViewBox increased to 1000x1000 to prevent clipping ("removing the frame")
+                      - Scale 4.5 fits within 1000 units (approx 900px wide) 
+                      - Centered at 500, 500
+                    */}
+                    <path 
+                      transform="translate(500 500) scale(4.5)" 
+                      d="M44.7,-76.4C58.9,-69.2,71.8,-59.1,81.6,-46.6C91.4,-34.1,98.1,-19.2,95.8,-5.1C93.5,9,82.2,22.3,71.2,33.4C60.2,44.5,49.5,53.4,37.7,61.6C25.9,69.8,12.9,77.3,-0.6,78.4C-14.2,79.4,-28.4,74,-40.9,66.2C-53.4,58.4,-64.2,48.2,-72.5,35.9C-80.8,23.6,-86.6,9.2,-84.7,-4.2C-82.8,-17.6,-73.2,-30,-63,-40.9C-52.8,-51.8,-42,-61.2,-30.1,-69.9C-18.2,-78.6,-5.1,-86.6,6.2,-87.2C17.5,-87.9,35,-81.2,44.7,-76.4Z" 
+                    />
+                  </clipPath>
+                </defs>
+                
+                {/* Image fills the 1000x1000 viewbox to ensure full coverage of the mask */}
+                <image 
+                   href="https://i.postimg.cc/PxDgy0Y1/Peace-Ezeala-Photo.jpg"
+                  x="80" 
+                  y="80" 
+                  width="1000" 
+                  height="1000" 
+                  clipPath="url(#blobMask)" 
+                  preserveAspectRatio="xMidYMin slice"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
