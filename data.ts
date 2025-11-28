@@ -107,12 +107,20 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
   },
   {
     id: "t3",
+    name: "Jaymin",
+    role: "Director of Technology & Digital",
+    company: "McKinsey & Co",
+    quote: "Peace is an exceptional professional who combines deep expertise, creativity, and a collaborative spirit in everything she does. Her strategic thinking and calm leadership consistently helped us navigate challenges and deliver strong results. Peace also excels at building trust and fostering collaboration, creating an environment where teams feel empowered to do their best work.",
+    avatar: "https://picsum.photos/100/100?random=6"
+  },
+  /*{
+    id: "t4",
     name: "David",
     role: "Director Product Management",
     company: "McKinsey & Co",
     quote: "If Peace wasn't there in the middle, where would we be? We would probably have calls with 20 people on them, with the same people turning up each time and gradually becoming less and less.",
     avatar: "https://picsum.photos/100/100?random=6"
-  }
+  }*/
 ];
 
 // NOTE: Icons are rendered in the component, here we just keep structure.
