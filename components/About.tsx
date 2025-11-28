@@ -44,7 +44,7 @@ const About: React.FC = () => {
         <div className="grid lg:grid-cols-12 gap-12 items-start">
           
           {/* Header Column */}
-          <div className="lg:col-span-4 space-y-6 sticky top-24">
+          <div className="lg:col-span-4 space-y-6 lg:sticky lg:top-24">
              <h2 className="text-4xl md:text-5xl font-bold text-primary leading-tight">
                How I drive <br/> Transformation
              </h2>
