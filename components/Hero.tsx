@@ -14,11 +14,10 @@ const Hero: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           
           {/* Left Content */}
-          <div className="space-y-6 md:pr-12 animate-fade-in-up order-2 md:order-1">
-            <h3 className="font-serif text-2xl text-secondary italic">Hey There,</h3>
+          <div className="space-y-6 md:pr-12 animate-fade-in-up order-2 md:order-1">            
+            <h3 className="font-serif text-2xl text-primary italic">Hey There,</h3>
             <h1 className="text-5xl md:text-7xl font-extrabold text-primary leading-[1.1] tracking-tight">
-              I'm <span className="text-brand-green">Peace</span> <br />
-              <span className="text-brand-green">Ezeala</span>
+              I'm <span className="text-brand-green">Peace</span> <br />              
             </h1>
             
             {/* Tagline removed */}
