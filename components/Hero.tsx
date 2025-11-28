@@ -35,8 +35,9 @@ const Hero: React.FC = () => {
               <div className="h-12 w-[1px] bg-gray-300"></div>
               <div>
                 <span className="block text-5xl font-bold text-primary">{PERSONAL_INFO.transformations}</span>
-                <span className="text-sm font-bold text-secondary uppercase tracking-wider">Infinite Team Growth</span> <br />
-                <span className="text-sm font-bold text-secondary uppercase tracking-wider">Infinite Product Possibilities</span>
+                <span className="text-sm font-bold text-secondary uppercase tracking-wider">Transforming Teams.</span> <br />
+                <span className="text-sm font-bold text-secondary uppercase tracking-wider">Scaling Products.</span> <br />
+                <span className="text-sm font-bold text-secondary uppercase tracking-wider">Driving Impact.</span>
               </div>
             </div>
           </div>
