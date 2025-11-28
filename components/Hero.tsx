@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Award } from 'lucide-react';
 import { PERSONAL_INFO } from '../data';
 
 const Hero: React.FC = () => {
@@ -41,9 +41,10 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Right Content - Image masked inside Brush Stroke */}
-          <div className="relative order-1 md:order-2 flex justify-center items-center">
+          <div className="relative order-1 md:order-2 flex justify-center items-center w-full">
             {/* Max width set to 2xl for large display, aspect-square to maintain ratio */}
-            <div className="w-full max-w-2xl aspect-square relative">
+            {/* Added w-[85%] on mobile to ensure visual centering and spacing from edges */}
+            <div className="w-[85%] md:w-full max-w-2xl aspect-square relative">
               <svg 
                 viewBox="0 0 1000 1000" 
                 xmlns="http://www.w3.org/2000/svg" 
@@ -75,6 +76,27 @@ const Hero: React.FC = () => {
                   preserveAspectRatio="xMidYMin slice"
                 />
               </svg>
+
+              {/* Floating Badge: Product Certified Leader (Top Right) */}
+              <div className="absolute top-[2%] right-[2%] md:top-[8%] md:right-[5%] bg-white w-24 h-24 md:w-32 md:h-32 rounded-full shadow-2xl flex flex-col items-center justify-center text-center p-2 z-20 transition-transform hover:scale-105 duration-300">
+                 <Award className="text-brand-orange w-6 h-6 md:w-8 md:h-8 mb-1 md:mb-2" />
+                 <span className="text-[8px] md:text-[10px] font-bold text-primary leading-tight tracking-wider">
+                   PRODUCT<br/>CERTIFIED<br/>LEADER
+                 </span>
+              </div>
+
+              {/* Floating Badge: Years Experience (Bottom Left) */}
+              <div className="absolute bottom-[5%] left-[0%] md:bottom-[10%] md:left-[0%] z-20 animate-float">
+                <div className="bg-white p-5 md:p-8 rounded-[2rem] shadow-2xl transition-transform hover:scale-105 duration-300 flex flex-col items-center justify-center text-center">
+                   <span className="font-serif text-4xl md:text-5xl font-bold text-primary leading-none block">
+                     {PERSONAL_INFO.yearsExperience}+
+                   </span>
+                   <span className="text-[10px] md:text-xs font-bold text-secondary uppercase tracking-widest mt-2 block">
+                     Years<br/>Experience
+                   </span>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
