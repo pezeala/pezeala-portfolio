@@ -14,6 +14,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
         <p className="font-bold text-primary">&copy; {new Date().getFullYear()} Peace Ezeala</p>
         <div className="flex gap-4 mt-2 md:mt-0">
+           <a href="#introduction" onClick={(e) => handleNavClick(e, '#introduction')} className="hover:text-brand-green cursor-pointer">About</a>
            <a href="#about" onClick={(e) => handleNavClick(e, '#about')} className="hover:text-brand-green cursor-pointer">Strengths</a>
            <a href="#projects" onClick={(e) => handleNavClick(e, '#projects')} className="hover:text-brand-green cursor-pointer">Works</a>
            <a href="#testimonials" onClick={(e) => handleNavClick(e, '#testimonials')} className="hover:text-brand-green cursor-pointer">Notes</a>
