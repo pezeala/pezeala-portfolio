@@ -10,9 +10,9 @@ export const PERSONAL_INFO = {
   linkedin: "linkedin.com/in/peace-ezeala",
   location: "New York Metro Area, (Open to Remote)",
   yearsExperience: 25,
+  /*teamsLed: 100,*/
+  /*transformations:100 ,*/
   resume: "https://drive.google.com/file/d/1768gP3LScFzcf_IxH3lPP0vGqY2T5kXy/view?usp=sharing" // link for resume
-  /*teamsLed: 40,*/
-  /*transformations: 100*/
 };
 
 export const EXPERIENCE_DATA: ExperienceItem[] = [
@@ -24,7 +24,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     description: "Leading and coaching multiple global product teams of 150+ spanning Product Management, UX, and Engineering operations.",
     achievements: [
       "Spearheaded the design and rollout of automated licensing system, reducing monthly tickes by 95% and and operational cost",
-      "Developed an interactive product prototype using vibe coding to validate core features and accelerate stakeholder alignment, reducing design-to-development handoff time.",
+      "Developed an interactive product prototype using vibe coding to validate features and accelerate stakeholder alignment, reducing design-to-development handoff time.",
       "Designed and led enterprise learning initiatives, including an AI-first product development workshop."
     ],
     image: "https://picsum.photos/400/300?random=10"
@@ -36,9 +36,9 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     period: "2018 - 2020",
     description: "Drove consistent, high-quality product delivery, simultaneously leading diverse teams through the full Agile lifecycle.",
     achievements: [
-      "Enhanced stakeholder visibility and data-driven governance by creating and managing real-time metrics dashboards in Jira and Tableau.",
-      "Fostered continuous improvement and organizational alignment by proactively resolving impediments.",
-      "Accelerated team performance and reliability by implementing capacity planning into sprint planning and coaching Agile best practices."
+      "Enhanced stakeholder visibility & data-driven governance by creating and managing real-time metrics dashboards in Jira & Tableau.",
+      "Accelerated team performance and reliability by implementing capacity planning into sprint planning and coaching Agile best practices.",
+      "Fostered continuous improvement and organizational alignment by proactively resolving impediments."      
     ],
     image: "https://picsum.photos/400/300?random=11"
   },
@@ -49,8 +49,8 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     period: "2012 - 2017",
     description: "Accelerated product delivery and improved team velocity by leading cross‑functional teams with Scrum, Kanban, and SAFe frameworks.",
     achievements: [
-      "Governed end-to-end SDLC and deployment by actively deploying, configuring, and testing products across diverse environments, including AWS, VMware, physical appliances, LAN clusters, and troubleshooting critical deployment and customer-escalated issues.",
-      "Facilitated alignment from planning through execution, collaborating with Product Management to break down complex stories into detailed engineering tasks.",
+      "Governed end-to-end SDLC deployment, configuring, testing products across diverse environments, and troubleshooting critical deployment issues.",
+      "Facilitated alignment from planning through execution, collaborating with Product Management to break down requirements into engineering tasks.",
       "Implemented DevOps CI/CD pipelines reducing deployment time from days to minutes."
     ],
     image: "https://picsum.photos/400/300?random=12"
