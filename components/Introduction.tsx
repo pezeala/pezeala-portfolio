@@ -2,7 +2,7 @@ import React from 'react';
 
 const Introduction: React.FC = () => {
   return (
-    <section className="py-24 bg-brand-light-green/20 border-b border-gray-100">
+    <section id="introduction" className="py-24 bg-brand-light-green/20 border-b border-gray-100">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center space-y-10">
            {/* Quote / Headline */}
