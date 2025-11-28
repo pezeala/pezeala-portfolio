@@ -27,15 +27,12 @@ const Hero: React.FC = () => {
             </a>
 
             <div className="pt-4 flex items-center gap-8">
-              <div>
-                <span className="block text-5xl font-bold text-primary">{PERSONAL_INFO.yearsExperience}+</span>
-                <span className="text-sm font-bold text-secondary uppercase tracking-wider">Years Experience</span>
-              </div>
-              <div className="h-12 w-[1px] bg-gray-300"></div>
+             
+              
               <div>               
-                <span className="text-sm font-bold text-secondary uppercase tracking-wider">Transforming Teams.</span> <br />
-                <span className="text-sm font-bold text-secondary uppercase tracking-wider">Scaling Products.</span> <br />
-                <span className="text-sm font-bold text-secondary uppercase tracking-wider">Driving Impact.</span>
+                <span className="font-serif text-2xl text-primary italic  tracking-wider">Transforming Teams.</span> <br />
+                <span className="font-serif text-2xl text-primary italic tracking-wider">Scaling Products.</span> <br />
+                <span className="font-serif text-2xl text-primary italic tracking-wider">Driving Impact.</span>
               </div>
             </div>
           </div>
@@ -81,7 +78,7 @@ const Hero: React.FC = () => {
               <div className="absolute top-[2%] right-[2%] md:top-[8%] md:right-[5%] bg-white w-24 h-24 md:w-32 md:h-32 rounded-full shadow-2xl flex flex-col items-center justify-center text-center p-2 z-20 transition-transform hover:scale-105 duration-300">
                  <Award className="text-brand-orange w-6 h-6 md:w-8 md:h-8 mb-1 md:mb-2" />
                  <span className="text-[8px] md:text-[10px] font-bold text-primary leading-tight tracking-wider">
-                   PRODUCT<br/>CERTIFIED<br/>LEADER
+                   AGILE & PRODUCT<br/>CERTIFIED<br/>LEADER
                  </span>
               </div>
 
