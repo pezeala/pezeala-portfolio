@@ -21,9 +21,7 @@ const Hero: React.FC = () => {
               <span className="text-brand-green">Ezeala</span>
             </h1>
             
-            <p className="text-lg text-secondary max-w-md leading-relaxed font-medium">
-              {PERSONAL_INFO.tagline}
-            </p>
+            {/* Tagline removed */}
 
             <a href={`mailto:${PERSONAL_INFO.email}`} className="inline-block text-brand-orange font-bold text-lg hover:underline">
               {PERSONAL_INFO.email}
@@ -31,13 +29,14 @@ const Hero: React.FC = () => {
 
             <div className="pt-4 flex items-center gap-8">
               <div>
-                <span className="block text-5xl font-bold text-primary">{PERSONAL_INFO.yearsExperience}</span>
+                <span className="block text-5xl font-bold text-primary">{PERSONAL_INFO.yearsExperience}+</span>
                 <span className="text-sm font-bold text-secondary uppercase tracking-wider">Years Experience</span>
               </div>
               <div className="h-12 w-[1px] bg-gray-300"></div>
               <div>
                 <span className="block text-5xl font-bold text-primary">{PERSONAL_INFO.transformations}</span>
-                <span className="text-sm font-bold text-secondary uppercase tracking-wider">Unlimited Team Transformations</span>
+                <span className="text-sm font-bold text-secondary uppercase tracking-wider">Infinite Team Growth</span> <br />
+                <span className="text-sm font-bold text-secondary uppercase tracking-wider">Infinite Product Possibilities</span>
               </div>
             </div>
           </div>
