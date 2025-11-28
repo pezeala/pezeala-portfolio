@@ -18,9 +18,11 @@ const Contact: React.FC = () => {
             
             {/* Email */}
             <div className="flex flex-col items-center group">
-              <div className="w-20 h-20 rounded-full bg-brand-light-green flex items-center justify-center text-brand-green group-hover:scale-110 transition-transform mb-6 shadow-sm">
-                <Mail size={32} />
-              </div>
+              <a href={`mailto:${PERSONAL_INFO.email}`} className="block">
+                <div className="w-20 h-20 rounded-full bg-brand-light-green flex items-center justify-center text-brand-green group-hover:scale-110 transition-transform mb-6 shadow-sm cursor-pointer">
+                  <Mail size={32} />
+                </div>
+              </a>
               <p className="text-xs text-secondary uppercase font-bold mb-2">Email</p>
               <a href={`mailto:${PERSONAL_INFO.email}`} className="text-lg font-bold text-primary hover:text-brand-green transition-colors break-all">
                 {PERSONAL_INFO.email}
@@ -29,9 +31,11 @@ const Contact: React.FC = () => {
 
             {/* LinkedIn */}
             <div className="flex flex-col items-center group">
-              <div className="w-20 h-20 rounded-full bg-brand-light-green flex items-center justify-center text-brand-green group-hover:scale-110 transition-transform mb-6 shadow-sm">
-                <Linkedin size={32} />
-              </div>
+              <a href={`https://${PERSONAL_INFO.linkedin}`} target="_blank" rel="noreferrer" className="block">
+                <div className="w-20 h-20 rounded-full bg-brand-light-green flex items-center justify-center text-brand-green group-hover:scale-110 transition-transform mb-6 shadow-sm cursor-pointer">
+                  <Linkedin size={32} />
+                </div>
+              </a>
               <p className="text-xs text-secondary uppercase font-bold mb-2">LinkedIn</p>
               <a href={`https://${PERSONAL_INFO.linkedin}`} target="_blank" rel="noreferrer" className="text-lg font-bold text-primary hover:text-brand-green transition-colors">
                 Connect on LinkedIn
@@ -40,9 +44,11 @@ const Contact: React.FC = () => {
 
              {/* Resume */}
              <div className="flex flex-col items-center group">
-              <div className="w-20 h-20 rounded-full bg-brand-light-green flex items-center justify-center text-brand-green group-hover:scale-110 transition-transform mb-6 shadow-sm">
-                <FileText size={32} />
-              </div>
+              <a href={PERSONAL_INFO.resume} target="_blank" rel="noreferrer" className="block">
+                <div className="w-20 h-20 rounded-full bg-brand-light-green flex items-center justify-center text-brand-green group-hover:scale-110 transition-transform mb-6 shadow-sm cursor-pointer">
+                  <FileText size={32} />
+                </div>
+              </a>
               <p className="text-xs text-secondary uppercase font-bold mb-2">Resume</p>
               <a href={PERSONAL_INFO.resume} target="_blank" rel="noreferrer" className="text-lg font-bold text-primary hover:text-brand-green transition-colors">
                 View Resume
