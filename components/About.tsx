@@ -49,10 +49,10 @@ const About: React.FC = () => {
                How I drive <br/> Transformation
              </h2>
              <p className="text-secondary text-lg leading-relaxed">
-               I help organizations find their rhythm. Solving complex product problems using process design to create scalable digital engines.
+               I enable organizations to unlock their rhythm by turning complex product problems into scalable digital solutions.
              </p>
              <p className="text-secondary">
-               Besides that, I also help their business grow through data-driven decision making and agile culture.
+               I fuel business growth through data-driven decision making and by embeding agility into the culture.
              </p>
                           
           </div>
@@ -61,28 +61,28 @@ const About: React.FC = () => {
           <div className="lg:col-span-8 grid md:grid-cols-2 gap-6">
                <ServiceCard 
                   title="Product Strategy & Vision" 
-                  description="Roadmapping, Market Analysis, and Go-to-Market execution. I build the vision that drives the product."
+                  description="I turn ambitious business goals into clear, data‑backed strategies that accelerate delivery. I build the vision that drives the product, aligning teams and stakeholders around shared success."
                   icon={<Layers size={24} />}
                   theme="green"
                   stats="95% measurable outcomes with increased stakeholder visibility."
                />
                <ServiceCard 
                   title="Agile Transformation" 
-                  description="SAFe implementation, Team Coaching, and Organizational Change. I build the teams that build the product."
+                  description="I drive organizational change through SAFe and team coaching. I build the teams that build the product, enabling them to accelerate delivery, adapt with agility, and create lasting impact."
                   icon={<Users size={24} />}
                   theme="yellow"
                   stats="Improving delivery predictability and collaboration."
                />              
                <ServiceCard 
                   title="Tech Innovation" 
-                  description="Integrating GenAI, Modernizing Legacy Systems, and DevOps. I build the tech that builds the product."
+                  description="I harness GenAI, modernize legacy platforms, and drive DevOps adoption to unlock measurable business outcomes. I build the tech that builds the product, ensuring scalability, resilience, and speed to market."
                   icon={<Zap size={24} />}
                   theme="orange"
                   stats="Supercharging products to be more efficient, scalable, and impactful." 
                />
                <ServiceCard 
                   title="Operational Excellence" 
-                  description="Leveraging real-time metrics and automation to optimize workflows. I build the efficiency that scales the product."
+                  description="I harness real‑time insights and automation to optimize workflows that reduce costs and increase velocity. I build the efficiency that scales the product, enabling sustainable growth and impact."
                   icon={<TrendingUp size={24} />}
                   theme="primary"
                   stats="Reducing operational costs and accelerating time-to-market." 
