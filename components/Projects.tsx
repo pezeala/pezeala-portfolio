@@ -1,5 +1,5 @@
 import React from 'react';
-import { PROJECTS_DATA } from '../data';
+import { PROJECTS_DATA, PERSONAL_INFO } from '../data';
 
 const Projects: React.FC = () => {
   const cardThemes = [
@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
             <h2 className="text-4xl font-bold text-primary mb-4">My Latest Works</h2>
             <p className="text-secondary">Perfect solutions for digital experience.</p>
           </div>
-          <a href="#" className="hidden md:block text-brand-orange font-bold hover:underline">Explore More Works</a>
+          <a href={`https://${PERSONAL_INFO.linkedin}`} target="_blank" rel="noreferrer" className="hidden md:block text-brand-orange font-bold hover:underline">Explore More Works</a>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
