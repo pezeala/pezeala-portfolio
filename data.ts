@@ -12,7 +12,7 @@ export const PERSONAL_INFO = {
   yearsExperience: 25,
   /*teamsLed: 100,*/
   /*transformations:100 ,*/
-  resume: "https://drive.google.com/file/d/1SGk587TdaA-7GY5Dokf1Qk0gvEsy10QL/view?usp=drive_link" // link for resume
+  resume: "https://drive.google.com/file/d/1VBKHAPVig4gXiwVaAzUNCN-FoPwfYZqj/view?usp=sharing" // link for resume
 };
 
 export const EXPERIENCE_DATA: ExperienceItem[] = [
